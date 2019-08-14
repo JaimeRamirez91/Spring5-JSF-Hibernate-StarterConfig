@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html  xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+    <body>
+        Este es un test desde jsf
+        <p:dataTable>
+         <f:facet name="header">
+                               <h:outputText value="Proveedores" />
+                        </f:facet>
+                        <p:column headerText="N°">
+                            <h:outputText value="fbhgf"/>
+                        </p:column>
+                        <p:column headerText="Nombre">
+                            <h:outputText value="dfhfd"/>
+                        </p:column>
+                        <p:column headerText="Dirección">
+                            <h:outputText value="fdh"/>
+                        </p:column>
+                        <p:column headerText="Telefono">
+                            <h:outputText value="hfdhdf"/>
+                        </p:column>
+                        <p:column headerText="Modificar">
+                            <p:commandButton value="Modificar" styleClass="btnModificar">
+                                 
+                            </p:commandButton>
+                        </p:column>
+        </p:dataTable>
+ 
+       <p:button value="test">
+          <f:param name="productId" value="20"  />
+      </p:button>
+           <h:outputLabel value="#{applicationInfo.slogan}" />
+    </body>
+</html>

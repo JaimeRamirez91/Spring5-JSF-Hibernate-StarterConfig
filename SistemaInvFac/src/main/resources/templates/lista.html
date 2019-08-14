@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8"/>
+<title th:text="${titulo}"></title>
+</head>
+<body>
+   <table>
+   	<thead>
+   	 <tr>
+   	   <th>ID</th>
+   	   <th>NOMBRE</th>
+   	   <th>DETALLE</th>
+   	   <th>CREATEDAT</th>
+   	 </tr>
+   	</thead>
+   <tbody>
+     <tr  th:each ="categoria: ${categorias}">
+   	   <th th:text="${categoria.id}"></th>
+   	   <th th:text="${categoria.nombre}"></th>
+   	   <th th:text="${categoria.detalle}"></th>
+   	   <th th:text="${categoria.createAt}"></th>
+   	 </tr>
+   </tbody>
+   </table>
+</body>
+</html>
